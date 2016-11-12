@@ -1,0 +1,47 @@
+/*change font-size as needed
+font-family can be changed with common fonts, haven’t tested more advanced fonts
+change color # code to affect the color of chat messages
+*/
+span.message {
+	font-family: Verdana !important;
+	font-size: 20px;
+	color: #ffffff !important;
+	line-height: 25px;
+}
+
+/*
+change font-size under .from to change size of username
+change font-family as needed, I match with whatever I use for chat font
+*/
+span.from {
+	font-family: Verdana !important;
+	font-size: 25px;
+}
+
+/*
+change #code for color of links in chat
+use
+a:hover {
+color: #ff0000 !important;
+}
+and change the color as needed for changing colors when your mouse over the link in chat
+*/
+a {
+	color: #0ff !important;
+}
+
+/*
+everything below here affects the transparent background. If you wish to change the overall color of the background change the entire “rgba(0, 0, 0, 0.4)” to a normal #code. The opacity is affected by the 0.4, 0.0 is more transparent, 1.0 is filled black, adjust as need in combination with chroma key filter.
+*/
+div#ember560.ember-view.ember-chat-container {
+	background-color: rgba(0, 0, 0, 0.4) !important;
+}
+div#ember574.ember-view.ember-chat.roomMode {
+	background-color: rgba(0, 0, 0, 0.4) !important;
+}
+div.chat-room {
+	background-color: rgba(0, 0, 0, 0.4) !important;
+}
+.tse-scroll-content {
+	background-color: rgba(0, 0, 0, 0.4) !important;
+}
